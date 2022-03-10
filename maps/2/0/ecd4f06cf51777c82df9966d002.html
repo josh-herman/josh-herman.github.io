@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+	<title>My Family Tree - Family Map</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width; height=device-height; initial-scale=1.0; minimum-scale=0.5; maximum-scale=10.0; user-scalable=yes" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps GrampsAIO64-5.1.3-2 http://gramps-project.org/" />
+	<meta name="author" content="Joshua Herman" />
+	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../../../css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+	<link href="../../../css/narrative-maps.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/javascript" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://openlayers.org/en/latest/build/ol.js" type="text/javascript"></script>
+	<link href="https://openlayers.org/en/latest/css/ol.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+<script deter="deter" style="width =100%; height =100%;" type="text/javascript">
+
+  var marker_png = '../../../images/marker.png'
+
+
+  function initialize(){
+    var map;
+    var tracelife = [
+    [-77.988201, 42.719099, 'Glenwood Cemetery, Perry, Wyoming, New York, United States'],
+    [-78.265278, 42.737500, 'Orangeville, Wyoming, New York, United States'],
+    [-78.265278, 42.737500, 'Orangeville, Wyoming, New York, United States'],
+    [-78.005278, 42.715833, 'Perry, Wyoming, New York, United States']
+  ];;
+    var iconStyle = new ol.style.Style({
+      image: new ol.style.Icon(({
+        anchor: [0.2, 48],
+        anchorXUnits: 'fraction',
+        anchorYUnits: 'pixels',
+        opacity: 1.0,
+        src: marker_png
+      }))
+    });
+    var markerSource = new ol.source.Vector({
+    });
+    for (var i = 0; i < tracelife.length; i++) {
+      var loc = tracelife[i];
+      var iconFeature = new ol.Feature({
+       geometry: new ol.geom.Point(ol.proj.transform([loc[0], loc[1]],
+                                                     'EPSG:4326', 'EPSG:3857')),
+       name: loc[2],
+      });
+      iconFeature.setStyle(iconStyle);
+      markerSource.addFeature(iconFeature);
+    }
+    markerLayer = new ol.layer.Vector({
+      source: markerSource,
+      style: iconStyle
+    });
+    var centerCoord = new ol.proj.transform([-78.12674000, 42.72666600], 'EPSG:4326', 'EPSG:3857');
+    map= new ol.Map({
+                 target: 'map_canvas',
+                 layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
+                          markerLayer],
+                 view: new ol.View({ center: centerCoord, zoom: 6 })
+                 });
+    var element = document.getElementById('popup');
+    var tooltip = new ol.Overlay({
+      element: element,
+      positioning: 'bottom-center',
+      stopEvent: false
+    });
+    map.addOverlay(tooltip);
+    var displayFeatureInfo = function(pixel) {
+      var feature = map.forEachFeatureAtPixel(pixel, function(feature, layer) {
+        return feature;
+      });
+      var info = document.getElementById('popup');
+      if (feature) {
+        var geometry = feature.getGeometry();
+        var coord = geometry.getCoordinates();
+        tooltip.setPosition(coord);
+        $(element).siblings('.popover').css({ width: '250px' });
+        $(element).siblings('.popover').css({ background: '#aaa' });
+        $(info).popover({
+          'placement': 'auto',
+          'html': true,
+          'content': feature.get('name')
+        });
+        $(info).popover('show');
+      } else {
+        // TODO : some warning with firebug here
+        $(info).popover('destroy');
+        $('.popover').remove();
+      }
+    };
+    map.on('pointermove', function(evt) {
+      if (evt.dragging) {
+        return;
+      }
+      var pixel = map.getEventPixel(evt.originalEvent);
+      displayFeatureInfo(pixel);
+    });
+    map.on('click', function(evt) {
+      displayFeatureInfo(evt.pixel);
+    });
+  };
+
+</script>
+</head>
+<body id ="FamilyMap" onload ="initialize()">
+	<div id="outerwrapper">
+		<div id="header">
+			<a href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</a>
+			<h1 id="SiteTitle">My Family Tree</h1>
+		</div>
+		<div class="wrappernav" id="nav" role="navigation">
+			<div class="container">
+				<ul class="nav" id="dropmenu">
+					<li><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
+					<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
+					<li><a href="../../../places.html" title="Places">Places</a></li>
+					<li><a href="../../../media.html" title="Media">Media</a></li>
+					<li><a href="../../../thumbnails.html" title="Thumbnails">Thumbnails</a></li>
+					<li><a href="../../../statistics.html" title="Statistics">Statistics</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content" id="FamilyMapDetail">
+			<h3>Tracking Nevinger, Albert Daniel</h3>
+			<p id="description">
+			This map page represents that person and any descendants with all of their event/ places. If you place your mouse over the marker it will display the place name. The markers and the Reference list are sorted in date order (if any?). Clicking on a place&#8217;s name in the Reference section will take you to that place&#8217;s page.
+			</p>
+			<div id="map_canvas">
+			</div>
+			<div id="popup"></div>
+			<div class="subsection" id="references">
+				<h4>References</h4>
+				<table class="infolist">
+					<thead>
+						<tr>
+							<th class="ColumnDate">Date</th>
+							<th class="ColumnPlace">Place Title</th>
+							<th class="ColumnType">Event Type</th>
+						</tr>
+					</thead>
+					<tbody>
+						<tr>
+							<td class="ColumnDate"></td>
+							<td class="ColumnPlace"><a href="../../../plc/3/4/ee9ae85e420417fea745b70f743.html" title="Glenwood Cemetery, Perry, Wyoming, New York, United States">Glenwood Cemetery, Perry, Wyoming, New York, United States</a></td>
+							<td class="ColumnType">Burial</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1876-11-16</td>
+							<td class="ColumnPlace"><a href="../../../plc/2/f/ecc450e1d0327922e2a0cfec6f2.html" title="Orangeville, Wyoming, New York, United States">Orangeville, Wyoming, New York, United States</a></td>
+							<td class="ColumnType">Birth</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1880-06-01</td>
+							<td class="ColumnPlace"><a href="../../../plc/2/f/ecc450e1d0327922e2a0cfec6f2.html" title="Orangeville, Wyoming, New York, United States">Orangeville, Wyoming, New York, United States</a></td>
+							<td class="ColumnType">Census</td>
+						</tr>
+						<tr>
+							<td class="ColumnDate">1907-06-05</td>
+							<td class="ColumnPlace"><a href="../../../plc/f/f/ee9abba8e8f3050bfb56c8d7fff.html" title="Perry, Wyoming, New York, United States">Perry, Wyoming, New York, United States</a></td>
+							<td class="ColumnType">Marriage</td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+		</div>
+		<div class="fullclear"></div>
+		<div id="footer">
+			<p id="createdate">
+			Generated by <a href="http://gramps-project.org/">Gramps</a> GrampsAIO64-5.1.3-2 on 2022-03-10
+			</p>
+			<p id="copyright">
+			&copy; 2022 Joshua Herman
+			</p>
+		</div>
+	</div>
+</body>
+</html>

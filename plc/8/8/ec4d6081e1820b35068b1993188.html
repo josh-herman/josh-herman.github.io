@@ -1,0 +1,2345 @@
+<!DOCTYPE html>
+<html xml:lang="en" lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head lang="en">
+	<title>My Family Tree - Places</title>
+	<meta charset="UTF-8" />
+	<meta name ="viewport" content="width=device-width; height=device-height; initial-scale=1.0; minimum-scale=0.5; maximum-scale=10.0; user-scalable=yes" />
+	<meta name ="apple-mobile-web-app-capable" content="yes" />
+	<meta name="generator" content="Gramps GrampsAIO64-5.1.3-2 http://gramps-project.org/" />
+	<meta name="author" content="Joshua Herman" />
+	<link href="../../../images/favicon2.ico" rel="shortcut icon" type="image/x-icon" />
+	<link href="../../../css/narrative-print.css" media="print" rel="stylesheet" type="text/css" />
+	<link href="../../../css/narrative-screen.css" media="screen" rel="stylesheet" type="text/css" />
+	<script>function navFunction() { var x = document.getElementById("dropmenu"); if (x.className === "nav") { x.className += " responsive"; } else { x.className = "nav"; } }</script>
+	<link href="../../../css/narrative-maps.css" media="screen" rel="stylesheet" type="text/css" />
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" rel="stylesheet" type="text/javascript" />
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.1/jquery.min.js" type="text/javascript"></script>
+	<script src="https://openlayers.org/en/latest/build/ol.js" type="text/javascript"></script>
+	<link href="https://openlayers.org/en/latest/css/ol.css" rel="stylesheet" type="text/css" />
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" type="text/javascript"></script>
+</head>
+<body  onload = "initialize();" >
+	<div id="outerwrapper">
+		<div id="header">
+			<a href="javascript:void(0);" class="navIcon" onclick="navFunction()">&#8801;</a>
+			<h1 id="SiteTitle">My Family Tree</h1>
+		</div>
+		<div class="wrappernav" id="nav" role="navigation">
+			<div class="container">
+				<ul class="nav" id="dropmenu">
+					<li><a href="../../../individuals.html" title="Individuals">Individuals</a></li>
+					<li><a href="../../../index.html" title="Surnames">Surnames</a></li>
+					<li class = "CurrentSection"><a href="../../../places.html" title="Places">Places</a></li>
+					<li><a href="../../../media.html" title="Media">Media</a></li>
+					<li><a href="../../../thumbnails.html" title="Thumbnails">Thumbnails</a></li>
+					<li><a href="../../../statistics.html" title="Statistics">Statistics</a></li>
+				</ul>
+			</div>
+		</div>
+		<div class="content" id="PlaceDetail">
+			<h3>Warsaw, Wyoming, New York, United States</h3>
+			<div id="summaryarea">
+				<table class="infolist place">
+					<tbody>
+						<tr>
+							<td class="ColumnAttribute">Latitude</td>
+							<td class="ColumnValue">42.74</td>
+						</tr>
+						<tr>
+							<td class="ColumnAttribute">Longitude</td>
+							<td class="ColumnValue">-78.133056</td>
+						</tr>
+						<tr>
+							<td class="ColumnAttribute">County</td>
+							<td class="ColumnValue">Wyoming</td>
+						</tr>
+						<tr>
+							<td class="ColumnAttribute">State/ Province</td>
+							<td class="ColumnValue">New York</td>
+						</tr>
+						<tr>
+							<td class="ColumnAttribute">Country</td>
+							<td class="ColumnValue">United States</td>
+						</tr>
+						<tr>
+							<td>
+							&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<th class="ColumnAttribute">Enclosed By</th>
+						</tr>
+						<tr>
+							<td class="ColumnValue"><a href="../../../plc/1/7/ec4d607f46a2547fad99900bf71.html" title="Wyoming">Wyoming</a></td>
+						</tr>
+						<tr>
+							<td>
+							&nbsp;
+							</td>
+						</tr>
+						<tr>
+							<th class="ColumnAttribute">Place Encloses</th>
+						</tr>
+						<tr>
+							<td class="ColumnValue"><a href="../../../plc/0/b/ee8765fc6ea4a40c6bb8ce996b0.html" title="Warsaw Cemetery">Warsaw Cemetery</a></td>
+						</tr>
+						<tr>
+							<td class="ColumnValue"><a href="../../../plc/7/a/ee94666edd9bffe2e7610e68a7.html" title="Immanuel United Methodist Church Cemetery">Immanuel United Methodist Church Cemetery</a></td>
+						</tr>
+						<tr>
+							<td class="ColumnValue"><a href="../../../plc/9/9/eea88cd21815dbc915265f2b199.html" title="Hatch Cemetery">Hatch Cemetery</a></td>
+						</tr>
+						<tr>
+							<td class="ColumnValue"><a href="../../../plc/7/4/eea8cfdfd95444de3d581a77847.html" title="St. Michael&#8217;s Cemetery">St. Michael&#8217;s Cemetery</a></td>
+						</tr>
+						<tr>
+							<td class="ColumnValue"><a href="../../../plc/f/6/eef62a9f97a3a1e7773ec68486f.html" title="Wyoming County Community Hospital">Wyoming County Community Hospital</a></td>
+						</tr>
+						<tr>
+							<td class="ColumnValue"><a href="../../../plc/e/c/ef88809fc0e472c823426b682ce.html" title="Old Saint Michael&#8217;s Catholic Cemetery">Old Saint Michael&#8217;s Catholic Cemetery</a></td>
+						</tr>
+					</tbody>
+				</table>
+			</div>
+			<h4>Place Map</h4>
+			<div id="map_canvas"><script type="text/javascript">
+  var marker_png = '../../../images/marker.png'
+
+  function initialize(){
+    var map;
+    var tracelife = [[-78.133056, 42.74, 'Warsaw, Wyoming, New York, United States']];
+    var iconStyle = new ol.style.Style({
+      image: new ol.style.Icon(({
+        anchor: [0.2, 48],
+        anchorXUnits: 'fraction',
+        anchorYUnits: 'pixels',
+        opacity: 1.0,
+        src: marker_png
+      }))
+    });
+    var markerSource = new ol.source.Vector({
+    });
+    for (var i = 0; i < tracelife.length; i++) {
+      var loc = tracelife[i];
+      var iconFeature = new ol.Feature({
+       geometry: new ol.geom.Point(ol.proj.transform([loc[0], loc[1]],
+                                                     'EPSG:4326', 'EPSG:3857')),
+       name: loc[2],
+      });
+      iconFeature.setStyle(iconStyle);
+      markerSource.addFeature(iconFeature);
+    }
+    markerLayer = new ol.layer.Vector({
+      source: markerSource,
+      style: iconStyle
+    });
+    var centerCoord = new ol.proj.transform([-78.13305600, 42.74000000], 'EPSG:4326', 'EPSG:3857');
+    map= new ol.Map({
+                 target: 'map_canvas',
+                 layers: [new ol.layer.Tile({ source: new ol.source.OSM() }),
+                          markerLayer],
+                 view: new ol.View({ center: centerCoord, zoom: 10 })
+                 });
+    var element = document.getElementById('popup');
+    var tooltip = new ol.Overlay({
+      element: element,
+      positioning: 'bottom-center',
+      stopEvent: false
+    });
+    map.addOverlay(tooltip);
+    var displayFeatureInfo = function(pixel) {
+      var feature = map.forEachFeatureAtPixel(pixel, function(feature, layer) {
+        return feature;
+      });
+      var info = document.getElementById('popup');
+      if (feature) {
+        var geometry = feature.getGeometry();
+        var coord = geometry.getCoordinates();
+        tooltip.setPosition(coord);
+        $(element).siblings('.popover').css({ width: '250px' });
+        $(element).siblings('.popover').css({ background: '#aaa' });
+        $(info).popover({
+          'placement': 'auto',
+          'html': true,
+          'content': feature.get('name')
+        });
+        $(info).popover('show');
+      } else {
+        // TODO : some warning with firebug here
+        $(info).popover('destroy');
+        $('.popover').remove();
+      }
+    };
+    map.on('pointermove', function(evt) {
+      if (evt.dragging) {
+        return;
+      }
+      var pixel = map.getEventPixel(evt.originalEvent);
+      displayFeatureInfo(pixel);
+    });
+    map.on('click', function(evt) {
+      displayFeatureInfo(evt.pixel);
+    });
+  };
+</script></div>
+			<div id="popup"></div>
+			<div class="subsection" id="references">
+				<h4>References</h4>
+				<ol class="Col1" role="Volume-n-Page" type=1>
+					<li>
+						<a href="../../../ppl/d/e/eccdf222a4f1edb242e0a100ded.html">
+						Fisher, John Nicholas
+						 (1853) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/c/eccb01fd6871effc8ed3c88c0c0.html">
+						Fisher, Nicholas
+						 (1853) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccdf222a4f1edb242e0a100ded.html">
+						Fisher, John Nicholas
+						 (1860-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/9/eccdf31a7be3bca419105f16793.html">
+						Fisher, Katherine Barbara Johanna
+						 (1860-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/2/eccdf405dae224ac32af7445d27.html">
+						Fisher, John Andrew
+						 (1860-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/d/eccdf3b072344110bbd93b59bde.html">
+						Fisher, Christopher
+						 (1860-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/c/eccb01fd6871effc8ed3c88c0c0.html">
+						Fisher, Nicholas
+						 (1860-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/1/eccb02113987b12a75b115c110.html">
+						Schimmel, Dorothea Christina
+						 (1860-06-01) 
+						
+						</a>
+					</li>
+					<li>
+					Family of Nevinger, Philipp and Fisher, Sophia Christina
+						<ol class="Col1" role="Volume-n-Page" type=a>
+							<li>
+								<a href="../../../ppl/5/e/ecd1a9dcf8229985c3bf46cffe5.html">
+								Nevinger, Philipp
+								
+								
+								</a>
+							</li>
+							<li>
+								<a href="../../../ppl/7/f/eccdf372ace4d9b2e919d211ef7.html">
+								Fisher, Sophia Christina
+								
+								
+								</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../../ppl/7/f/eccdf372ace4d9b2e919d211ef7.html">
+						Fisher, Sophia Christina
+						 (1861-03-18) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/e/ecd1a9dcf8229985c3bf46cffe5.html">
+						Nevinger, Philipp
+						 (1861-03-18) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/9/eea88c218c63e72cda7b044e591.html">
+						Miller, William Jr.
+						 (1862-12-20) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/2/eeaa600adf423b9e6191f062728.html">
+						Fisher, John Nicholas Jr.
+						 (1863-06-04) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/5/eeff44fea2e327401c8b3b2825b.html">
+						Smith, Sarah M
+						 (1863-12-02) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/9/eeaa6030c51774137faea284b9b.html">
+						Fisher, Ida Julia
+						 (1864-06-17) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/0/eeaa60460dd3603cf9e3840ac05.html">
+						Fisher, Emma Adelle
+						 (1866-09-29) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/c/ee9d7288e37b1f373ab5f523c4.html">
+						Fisher, Dora Lydia
+						 (1868-08-11) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/c/eeaa605669648d99d051a35cdc8.html">
+						Fisher, Carline Christina
+						 (1869-01-03) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/0/ee9dedcaa0470f4d54e366f7b07.html">
+						Fisher, Walter Nicholas
+						 (1869-10-31) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/efa258c47d0bae15a11e203b1c.html">
+						Stortz, John
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/d/eccdf3b072344110bbd93b59bde.html">
+						Fisher, Christopher
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/c/ef8c5131c694f78bced67f101c1.html">
+						Steckel, Edward J
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/0/ee9dedcaa0470f4d54e366f7b07.html">
+						Fisher, Walter Nicholas
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/d/eeff3877c5d40f1870eff5441df.html">
+						Dick, Philippine
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/eccaf3d0e854ddff14f14aec07b.html">
+						Smith, Abraham
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/9/5/eeff0ca93e94f1365f403192859.html">
+						Smith, Philip
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/2/eccdf405dae224ac32af7445d27.html">
+						Fisher, John Andrew
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/5/ee9b2e880247157f3d6d108ef5a.html">
+						Christ, Lowesa
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/4/efa285da01038013b35827eca42.html">
+						Stortz, Martin
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/c/ee9d7288e37b1f373ab5f523c4.html">
+						Fisher, Dora Lydia
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/e/efa26266dcc5a95e9f37c8a3def.html">
+						Schneckenburger, Anna Barbara
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eeff09ecb0614650e26c1d8b5ed.html">
+						Smith, Henry D
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/f/eccdf2ce90e43d29aa6035f75f8.html">
+						Fisher, Eva Margaret
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/a/eeff43345ca1d401656f6f189a6.html">
+						Smith Schneckenburger, Catherine
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/3/efa28cc99365acb9323ea451834.html">
+						Stortz, John
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/1/eea7b788e223e86c92fc95ee218.html">
+						Cook, Lucinda
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/6/eea7b8ecf64ec7b1f2d84cec6a.html">
+						Fisher, Julian
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/ef8c508ed987a292f6e5a863cb.html">
+						Steckel, Christian
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/7/ef8c511d9ac1b0f2026e8b9270.html">
+						Steckel, Frederick C
+						 (1870-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/2/efa5676787e683d822239982623.html">
+						Stortz, Edith
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/4/efa5672f8ce3bc31f0bcf4bfc44.html">
+						Smith, Alice
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/1/eefff73e06d459de7bab7412011.html">
+						Herman, Louisa
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/efa5674691b1e56cc5c60f0c5cb.html">
+						Stortz, Calvin
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/eeff39abb456c82837585e56ecb.html">
+						Smith, Charles S
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/4/efa285da01038013b35827eca42.html">
+						Stortz, Martin
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/5/ef120b07d25448720644d7fbe56.html">
+						Baker, Jacob
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/efa258c47d0bae15a11e203b1c.html">
+						Stortz, John
+						 (1875-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/c/eccb01fd6871effc8ed3c88c0c0.html">
+						Fisher, Nicholas
+						 (1879-03-09) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/c/ef887b44873535e2f83aa137bca.html">
+						, Carolina
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/1/eefff73e06d459de7bab7412011.html">
+						Herman, Louisa
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/5/eeff44fea2e327401c8b3b2825b.html">
+						Smith, Sarah M
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/9/5/eeff0ca93e94f1365f403192859.html">
+						Smith, Philip
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/eeff39abb456c82837585e56ecb.html">
+						Smith, Charles S
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/9/ef0b732194b58dcdaa65b8ab79d.html">
+						Smith, Edwin
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/efa5674691b1e56cc5c60f0c5cb.html">
+						Stortz, Calvin
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/a/efa56773144471c0c2c69a044ae.html">
+						Stortz
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/d/eeff3877c5d40f1870eff5441df.html">
+						Dick, Philippine
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/efa258c47d0bae15a11e203b1c.html">
+						Stortz, John
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/2/efa5676787e683d822239982623.html">
+						Stortz, Edith
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/4/efa5672f8ce3bc31f0bcf4bfc44.html">
+						Smith, Alice
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/7/ef0b72e8666446a072c209b8c72.html">
+						Smith, William
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/5/ef120b07d25448720644d7fbe56.html">
+						Baker, Jacob
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/5/eeff441ae9732be78ae981c395e.html">
+						Smith, Phoebe Julia
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/4/efa285da01038013b35827eca42.html">
+						Stortz, Martin
+						 (1880-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/0/eea88f169cc1f3f604bc674960b.html">
+						Miller, Adah Caroline
+						 (1886-04-18) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/eccaf3d0e854ddff14f14aec07b.html">
+						Smith, Abraham
+						 (1887-03-20) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/e/ef8615ddcde767601edf5cfb6e5.html">
+						Welz, Fred
+						 (1889) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/5/ef120b07d25448720644d7fbe56.html">
+						Baker, Jacob
+						 (1889-01-13) 
+						
+						</a>
+					</li>
+					<li>
+					Family of Baker, Henry C and Nevinger, Emma Christina
+						<ol class="Col1" role="Volume-n-Page" type=a>
+							<li>
+								<a href="../../../ppl/2/0/ecd4f010af972c082d3c0f1ed02.html">
+								Nevinger, Emma Christina
+								
+								
+								</a>
+							</li>
+							<li>
+								<a href="../../../ppl/5/e/ee7a29e44be4382e319540879e5.html">
+								Baker, Henry C
+								
+								
+								</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../../ppl/5/e/ee7a29e44be4382e319540879e5.html">
+						Baker, Henry C
+						 (1894-04-04) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/0/ecd4f010af972c082d3c0f1ed02.html">
+						Nevinger, Emma Christina
+						 (1894-04-04) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/eeff39abb456c82837585e56ecb.html">
+						Smith, Charles S
+						 (1895) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/e/eeff452283c2a723f068f93dde4.html">
+						Sergel, Charles
+						 (1895) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/d/ef200c35f532bd54a9a4e4103db.html">
+						Blecher, Rosina
+						 (1900-04-21) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/9/ef0b6b1b7032bb6d717a8eb1893.html">
+						Smith, Carl P
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/c/efa56d632d51b709be38ea668cf.html">
+						Stortz, Nellie
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/c/eeaa60a3a7996de6b34e1957c6.html">
+						Fisher, George Edwin
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/3/efa56da96b9422970503a5393a.html">
+						Stortz, Genevieve
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/eeff39abb456c82837585e56ecb.html">
+						Smith, Charles S
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/2/eeaa6121f3732bed2085e489a2f.html">
+						Fisher, Chester Clell
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccf384a0f72e9db756fdeca0ed.html">
+						Knox, Nellie E
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/0/ef0b6a9dc5e714689d67934590e.html">
+						Smith, George Albert
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/d/eeff3877c5d40f1870eff5441df.html">
+						Dick, Philippine
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/8/ef0b6b01fe36e931f004348dd86.html">
+						Smith, Benjamin D
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eea88f83c431ca3fe44088508ea.html">
+						Miller, Clara Louise
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/2/eea88f640116632f03088b3e322.html">
+						Miller, Charles William
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/0/ecd1462b2813745dbbf84d6150f.html">
+						Fisher, George F
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/0/eea88f169cc1f3f604bc674960b.html">
+						Miller, Adah Caroline
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/9/eea88c218c63e72cda7b044e591.html">
+						Miller, William Jr.
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/5/eeff44fea2e327401c8b3b2825b.html">
+						Smith, Sarah M
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/7/ef61c816d9c6d27b2fa0e04e77d.html">
+						Smith, Phillip
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/5/eccf37d4ef34835545985383955.html">
+						Fisher, Henry Martin
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/e/ef0e1d55661235a5027fb59a3ec.html">
+						Sergel, Henry
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/4/efa5672f8ce3bc31f0bcf4bfc44.html">
+						Smith, Alice
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/ef0b6b32d67787dd2bebff97e7b.html">
+						Smith, Wesley H
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/9/eccf399a688273476672171e290.html">
+						Fisher, Bertha Mae
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccdf222a4f1edb242e0a100ded.html">
+						Fisher, John Nicholas
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/e/eeff452283c2a723f068f93dde4.html">
+						Sergel, Charles
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/a/eea88f3ab416661cf1afdf253ae.html">
+						Miller, Sarah Phillifine
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/5/eeaa610dce712e8355d0f517951.html">
+						Fisher, Benjamin Jacob
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/7/eefff7955414df622a34b6ba27f.html">
+						Hausauer, Dorothy
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/5/eeaa5f8a3033d15692268b8455d.html">
+						Broadbooks Broadbrooks, Julia
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/4/efa285da01038013b35827eca42.html">
+						Stortz, Martin
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/3/ef0e1d2f74f2f3194d6dce06033.html">
+						Sergel, Ernest
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/9/ef0b732194b58dcdaa65b8ab79d.html">
+						Smith, Edwin
+						 (1900-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eea88f83c431ca3fe44088508ea.html">
+						Miller, Clara Louise
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eeff09ecb0614650e26c1d8b5ed.html">
+						Smith, Henry D
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/8/ef0b6b01fe36e931f004348dd86.html">
+						Smith, Benjamin D
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccf384a0f72e9db756fdeca0ed.html">
+						Knox, Nellie E
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/0/ef0b6a9dc5e714689d67934590e.html">
+						Smith, George Albert
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/6/ef0b6b6bdbb2417786b3cf70061.html">
+						Smith, Phillipine
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/d/eeff49acaaf24fc827f52b932d2.html">
+						Newinger, Salome
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/c/eeff39abb456c82837585e56ecb.html">
+						Smith, Charles S
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/3/efa56da96b9422970503a5393a.html">
+						Stortz, Genevieve
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/4/efa5672f8ce3bc31f0bcf4bfc44.html">
+						Smith, Alice
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/9/ef0b6b1b7032bb6d717a8eb1893.html">
+						Smith, Carl P
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/5/ee9b2e880247157f3d6d108ef5a.html">
+						Christ, Lowesa
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/2/ecd14814a7c4ba378bc34586928.html">
+						Fisher, Herman
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/4/efa285da01038013b35827eca42.html">
+						Stortz, Martin
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/5/eeaa5f8a3033d15692268b8455d.html">
+						Broadbooks Broadbrooks, Julia
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/7/eefff7955414df622a34b6ba27f.html">
+						Hausauer, Dorothy
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/a/eea88f3ab416661cf1afdf253ae.html">
+						Miller, Sarah Phillifine
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/e/eeff452283c2a723f068f93dde4.html">
+						Sergel, Charles
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/a/ecd14728b7a5682fd2071a663a3.html">
+						Herman, Melvia
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccdf222a4f1edb242e0a100ded.html">
+						Fisher, John Nicholas
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/2/eea88f640116632f03088b3e322.html">
+						Miller, Charles William
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/d/eccdf3b072344110bbd93b59bde.html">
+						Fisher, Christopher
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/9/eccf399a688273476672171e290.html">
+						Fisher, Bertha Mae
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/ef0b6b32d67787dd2bebff97e7b.html">
+						Smith, Wesley H
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/e/ecd14854ac069d96c2d329b1ce8.html">
+						Fisher, Everett
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/5/eccf37d4ef34835545985383955.html">
+						Fisher, Henry Martin
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/5/eeff44fea2e327401c8b3b2825b.html">
+						Smith, Sarah M
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/9/eea88c218c63e72cda7b044e591.html">
+						Miller, William Jr.
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/0/ecd1462b2813745dbbf84d6150f.html">
+						Fisher, George F
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/0/eea88f169cc1f3f604bc674960b.html">
+						Miller, Adah Caroline
+						 (1910-04-15) 
+						
+						</a>
+					</li>
+					<li>
+					Family of Fisher, Benjamin Jacob and Herman, Ermina
+						<ol class="Col1" role="Volume-n-Page" type=a>
+							<li>
+								<a href="../../../ppl/1/5/eeaa610dce712e8355d0f517951.html">
+								Fisher, Benjamin Jacob
+								
+								
+								</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../../ppl/1/5/eeaa610dce712e8355d0f517951.html">
+						Fisher, Benjamin Jacob
+						 (1912-03-20) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/3/eea778903d075722786c1085338.html">
+						Fisher, Glenn Herman
+						 (1914-10-29) 
+						
+						</a>
+					</li>
+					<li>
+					Family of Fisher, Glenn Herman and Griffen, Elgia Grace
+						<ol class="Col1" role="Volume-n-Page" type=a>
+							<li>
+								<a href="../../../ppl/8/3/eea778903d075722786c1085338.html">
+								Fisher, Glenn Herman
+								
+								
+								</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../../ppl/3/9/ef0b6b1b7032bb6d717a8eb1893.html">
+						Smith, Carl P
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/0/ef0b6a9dc5e714689d67934590e.html">
+						Smith, George Albert
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccf384a0f72e9db756fdeca0ed.html">
+						Knox, Nellie E
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/3/eea778903d075722786c1085338.html">
+						Fisher, Glenn Herman
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/5/ee9b2e880247157f3d6d108ef5a.html">
+						Christ, Lowesa
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/9/eea88c218c63e72cda7b044e591.html">
+						Miller, William Jr.
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eea88f83c431ca3fe44088508ea.html">
+						Miller, Clara Louise
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/2/eea88f640116632f03088b3e322.html">
+						Miller, Charles William
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/eccaf365aab427ca446cfa1331c.html">
+						Fisher, Katherine Barbara
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/5/eeff44fea2e327401c8b3b2825b.html">
+						Smith, Sarah M
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/8/ef0b6b01fe36e931f004348dd86.html">
+						Smith, Benjamin D
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/0/ecd1462b2813745dbbf84d6150f.html">
+						Fisher, George F
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/4/efa285da01038013b35827eca42.html">
+						Stortz, Martin
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/d/eccdf3b072344110bbd93b59bde.html">
+						Fisher, Christopher
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/9/eccf399a688273476672171e290.html">
+						Fisher, Bertha Mae
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/ef0b6b32d67787dd2bebff97e7b.html">
+						Smith, Wesley H
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/a/ecd14728b7a5682fd2071a663a3.html">
+						Herman, Melvia
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/3/efa56da96b9422970503a5393a.html">
+						Stortz, Genevieve
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/5/eccf37d4ef34835545985383955.html">
+						Fisher, Henry Martin
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/4/efa5672f8ce3bc31f0bcf4bfc44.html">
+						Smith, Alice
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/e/eccafc075ba404ac157662f52e1.html">
+						Schaumleffel, Arthur
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/e/ecd14854ac069d96c2d329b1ce8.html">
+						Fisher, Everett
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/e/ef0e1d55661235a5027fb59a3ec.html">
+						Sergel, Henry
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/2/ecd14814a7c4ba378bc34586928.html">
+						Fisher, Herman
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eccafbc7395c1dbf51d5f227ea.html">
+						Schaumleffel, George
+						 (1915-06-01) 
+						
+						</a>
+					</li>
+					<li>
+					Family of Nevinger, Martin Samuel and Burch, Jennie Mae
+						<ol class="Col1" role="Volume-n-Page" type=a>
+							<li>
+								<a href="../../../ppl/d/f/ecc80f5aed743b9829ff94f0cfd.html">
+								Nevinger, Martin Samuel
+								
+								
+								</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../../ppl/d/f/ecc80f5aed743b9829ff94f0cfd.html">
+						Nevinger, Martin Samuel
+						 (1916-02-02) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/d/ecc80ee6cba2ac5a357cb54bbdf.html">
+						Nevinger, Stuart Martin
+						 (1919-04-09) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/a/eea88f3ab416661cf1afdf253ae.html">
+						Miller, Sarah Phillifine
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/e/ef8615ddcde767601edf5cfb6e5.html">
+						Welz, Fred
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/2/ecd14814a7c4ba378bc34586928.html">
+						Fisher, Herman
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/7/ecd11c3811c41497acde06f75.html">
+						Fisher, Lester Hayden
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/2/ef861b1c82d4d405433f7b9112d.html">
+						Welz, Ella A
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/f/ecd1172a6152bffd0d83bb67df4.html">
+						Fisher, Herbert John
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccf384a0f72e9db756fdeca0ed.html">
+						Knox, Nellie E
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/b/ecd1114f9af480c48c64931a3b7.html">
+						Fisher, Viola Mary
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/eccaf365aab427ca446cfa1331c.html">
+						Fisher, Katherine Barbara
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/1/ecd11bb0c0918a368749f3d4e17.html">
+						Fisher, Mabel Katherine
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eea88f83c431ca3fe44088508ea.html">
+						Miller, Clara Louise
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/9/eea88c218c63e72cda7b044e591.html">
+						Miller, William Jr.
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/8/ecd1489c59b6fbfc807114d108b.html">
+						Fisher, Elizabeth
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/8/ecd10f7e3407ea13e6cd124138f.html">
+						Fisher, John Benjamin
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/4/ecd11c09a0d731210c27320c844.html">
+						Fisher, Florence Louisa
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eeff09ecb0614650e26c1d8b5ed.html">
+						Smith, Henry D
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/ef0b6b32d67787dd2bebff97e7b.html">
+						Smith, Wesley H
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/a/ecd1487703179d70fe3f88f3ca2.html">
+						Fisher, Edna
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/0/ecd1462b2813745dbbf84d6150f.html">
+						Fisher, George F
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/e/ecd14854ac069d96c2d329b1ce8.html">
+						Fisher, Everett
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/8/ecd10fd6b6218037de0b9fe358b.html">
+						Christ, Dora Dellie
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/a/ecd14728b7a5682fd2071a663a3.html">
+						Herman, Melvia
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/d/ef2c12246e67e8e8e3c939a56d0.html">
+						Schlenker, Christina
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/5/eccf37d4ef34835545985383955.html">
+						Fisher, Henry Martin
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eccafbc7395c1dbf51d5f227ea.html">
+						Schaumleffel, George
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/e/eccafc075ba404ac157662f52e1.html">
+						Schaumleffel, Arthur
+						 (1920-01-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/8/ee8b1b3261135cdaed8753b9f88.html">
+						Mortimer, Marion L
+						 (1921-12-04) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/ee8777d7bbd651a19279f15e158.html">
+						Betz, Margaret
+						 (1922-08-17) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/4/efa285da01038013b35827eca42.html">
+						Stortz, Martin
+						 (1923-02-20) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/2/eeaa600adf423b9e6191f062728.html">
+						Fisher, John Nicholas Jr.
+						 (1923-05-10) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/5/eeaa610dce712e8355d0f517951.html">
+						Fisher, Benjamin Jacob
+						 (1923-05-10) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/4/efa5672f8ce3bc31f0bcf4bfc44.html">
+						Smith, Alice
+						 (1925-01-14) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/f/ecd1172a6152bffd0d83bb67df4.html">
+						Fisher, Herbert John
+						 (1925-03-25) 
+						
+						</a>
+					</li>
+					<li>
+					Family of Fisher, Herbert John and Kelsey, Doris
+						<ol class="Col1" role="Volume-n-Page" type=a>
+							<li>
+								<a href="../../../ppl/4/f/ecd1172a6152bffd0d83bb67df4.html">
+								Fisher, Herbert John
+								
+								
+								</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../../ppl/5/e/ef8615ddcde767601edf5cfb6e5.html">
+						Welz, Fred
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eccafbc7395c1dbf51d5f227ea.html">
+						Schaumleffel, George
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/2/ecd14814a7c4ba378bc34586928.html">
+						Fisher, Herman
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/0/ecd1462b2813745dbbf84d6150f.html">
+						Fisher, George F
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/8/ecd1489c59b6fbfc807114d108b.html">
+						Fisher, Elizabeth
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/eccaf365aab427ca446cfa1331c.html">
+						Fisher, Katherine Barbara
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/5/eccf37d4ef34835545985383955.html">
+						Fisher, Henry Martin
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/d/ef2c12246e67e8e8e3c939a56d0.html">
+						Schlenker, Christina
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/a/ecd1487703179d70fe3f88f3ca2.html">
+						Fisher, Edna
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/8/ecd10f7e3407ea13e6cd124138f.html">
+						Fisher, John Benjamin
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/ef0b6b32d67787dd2bebff97e7b.html">
+						Smith, Wesley H
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/8/ecd10fd6b6218037de0b9fe358b.html">
+						Christ, Dora Dellie
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/7/ecd11c3811c41497acde06f75.html">
+						Fisher, Lester Hayden
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccf384a0f72e9db756fdeca0ed.html">
+						Knox, Nellie E
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/1/ecd11bb0c0918a368749f3d4e17.html">
+						Fisher, Mabel Katherine
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/e/eccafc075ba404ac157662f52e1.html">
+						Schaumleffel, Arthur
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/e/ecd14854ac069d96c2d329b1ce8.html">
+						Fisher, Everett
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/a/ecd14728b7a5682fd2071a663a3.html">
+						Herman, Melvia
+						 (1925-06-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/a/ecd14728b7a5682fd2071a663a3.html">
+						Herman, Melvia
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/9/eea88c218c63e72cda7b044e591.html">
+						Miller, William Jr.
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/e/eccafc075ba404ac157662f52e1.html">
+						Schaumleffel, Arthur
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/b/ecd1114f9af480c48c64931a3b7.html">
+						Fisher, Viola Mary
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/eccaf365aab427ca446cfa1331c.html">
+						Fisher, Katherine Barbara
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/d/ef2c12246e67e8e8e3c939a56d0.html">
+						Schlenker, Christina
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/7/ecd11c3811c41497acde06f75.html">
+						Fisher, Lester Hayden
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/8/ecd10f7e3407ea13e6cd124138f.html">
+						Fisher, John Benjamin
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/2/a/ecd1487703179d70fe3f88f3ca2.html">
+						Fisher, Edna
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/e/ef8615ddcde767601edf5cfb6e5.html">
+						Welz, Fred
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/8/ecd10fd6b6218037de0b9fe358b.html">
+						Christ, Dora Dellie
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/8/ecd1489c59b6fbfc807114d108b.html">
+						Fisher, Elizabeth
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/0/ecd1462b2813745dbbf84d6150f.html">
+						Fisher, George F
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/2/ecd14814a7c4ba378bc34586928.html">
+						Fisher, Herman
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/e/eccafbc7395c1dbf51d5f227ea.html">
+						Schaumleffel, George
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/e/ecd14854ac069d96c2d329b1ce8.html">
+						Fisher, Everett
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/f/ecd1172a6152bffd0d83bb67df4.html">
+						Fisher, Herbert John
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/8/ecd146575b962cf4613b481a68c.html">
+						Fisher, Otto Albert
+						 (1930-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/4/ecc48aa8ef5ff2da2b71855a4f.html">
+						Smith, Esther K
+						 (1934) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/6/ef200c463dc1c614bbc2dc5a68.html">
+						Pfeifer, Caroline
+						 (1934-10-26) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/8/ecc489afa5f3b027216d60a7c8e.html">
+						Smith, Jessie E
+						 (1935) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/5/eeff44fea2e327401c8b3b2825b.html">
+						Smith, Sarah M
+						 (1936-12-08) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/8/ecc48b6ec8b60c7dac444cb9680.html">
+						Smith, Lawrence George
+						 (1937) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/3/ecc1b3831c84c558458c0427434.html">
+						Smith, Norman Abraham
+						 (1937) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/d/e/eccf384a0f72e9db756fdeca0ed.html">
+						Knox, Nellie E
+						 (1938-08-28) 
+						
+						</a>
+					</li>
+					<li>
+					Family of Meissel, Henry and Knox, Nellie E
+						<ol class="Col1" role="Volume-n-Page" type=a>
+							<li>
+								<a href="../../../ppl/d/e/eccf384a0f72e9db756fdeca0ed.html">
+								Knox, Nellie E
+								
+								
+								</a>
+							</li>
+						</ol>
+					</li>
+					<li>
+						<a href="../../../ppl/8/e/ecd14854ac069d96c2d329b1ce8.html">
+						Fisher, Everett
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/a/ecc1b3c697d4c533bf6ace007af.html">
+						Brown, Lucille Avis
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/e/ef8615ddcde767601edf5cfb6e5.html">
+						Welz, Fred
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/8/5/eea88ea53ee62351ce55f059358.html">
+						Smith, Caroline
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/0/ecd1462b2813745dbbf84d6150f.html">
+						Fisher, George F
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/8/ecd10fd6b6218037de0b9fe358b.html">
+						Christ, Dora Dellie
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/0/d/ef2c12246e67e8e8e3c939a56d0.html">
+						Schlenker, Christina
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/1/eccaf365aab427ca446cfa1331c.html">
+						Fisher, Katherine Barbara
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/b/ecd1114f9af480c48c64931a3b7.html">
+						Fisher, Viola Mary
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/8/ecd10f7e3407ea13e6cd124138f.html">
+						Fisher, John Benjamin
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/e/eccafc075ba404ac157662f52e1.html">
+						Schaumleffel, Arthur
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/a/ecd14728b7a5682fd2071a663a3.html">
+						Herman, Melvia
+						 (1940-04-01) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/7/f/ef2c0c6093b78bbadc30f02baf7.html">
+						Schlenker, Walter
+						 (1940-08-30) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/c/ecc48cb91891dc1bdeb12f22c1.html">
+						Smith, Lynn Arthur
+						 (1946) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/c/ecc48a516102795c0127af7ec5.html">
+						Smith, Ruth Mary
+						 (1946-09-06) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/4/ecd4f0b134d26be70efa5c1db41.html">
+						Nevinger, Allen Roy
+						 (1946-11-30) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/a/6/ef200ccac8364905ed0a565456a.html">
+						Pfeifer, Phillip
+						 (1947-03-22) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/0/ef200c59235fc608c5df53410e.html">
+						Pfeifer, Anna
+						 (1951-04-09) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/8/eeff43ed8c8192315c9f66c4f85.html">
+						Smith, John Philip
+						 (1952-12-03) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/1/8/ef0b6a5ff4b665f6cee3c278281.html">
+						Wagenblass, Elizabeth
+						 (1957-09-11) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/3/9/ef0b6b1b7032bb6d717a8eb1893.html">
+						Smith, Carl P
+						 (1957-09-19) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/b/7/ef0b6b32d67787dd2bebff97e7b.html">
+						Smith, Wesley H
+						 (1957-09-19) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/6/8/ef0b6b01fe36e931f004348dd86.html">
+						Smith, Benjamin D
+						 (1957-09-19) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/0/ef0b6a9dc5e714689d67934590e.html">
+						Smith, George Albert
+						 (1957-09-19) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/6/ee8777a33023a66a9509d98df64.html">
+						Pfeifer, Rudolph
+						 (1958-10-06) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/c/8/ecd146575b962cf4613b481a68c.html">
+						Fisher, Otto Albert
+						 (1960-05-26) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/7/ef44f6f5576d1f86cd658bf97f.html">
+						Betz, Carl A
+						 (1964-12-24) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/e/a/eea88f3ab416661cf1afdf253ae.html">
+						Miller, Sarah Phillifine
+						 (1979-02-10) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/5/5/ecc48b0b95d173ed6db30e6f355.html">
+						Smith, Florence Mae
+						 (2005-03-15) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/f/a/ecc1b3c697d4c533bf6ace007af.html">
+						Brown, Lucille Avis
+						 (2009-12-30) 
+						
+						</a>
+					</li>
+					<li>
+						<a href="../../../ppl/4/3/ecc1b3831c84c558458c0427434.html">
+						Smith, Norman Abraham
+						 (2011-01-29) 
+						
+						</a>
+					</li>
+				</ol>
+			</div>
+		</div>
+		<div class="fullclear"></div>
+		<div id="footer">
+			<p id="createdate">
+			Generated by <a href="http://gramps-project.org/">Gramps</a> GrampsAIO64-5.1.3-2<br />Last change was the 2022-02-28 09:48:21
+			</p>
+			<p id="copyright">
+			&copy; 2022 Joshua Herman
+			</p>
+		</div>
+	</div>
+</body>
+</html>
